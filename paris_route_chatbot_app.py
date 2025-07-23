@@ -19,7 +19,7 @@ from llama_index.core.base.llms.types import ChatMessage, MessageRole
 from llama_index.core import Document, VectorStoreIndex, Settings, StorageContext, load_index_from_storage
 from llama_index.llms.groq import Groq
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-import json # Used for metadata length check, can be removed if not needed
+import json 
 
 # --- Streamlit Page Configuration ---
 st.set_page_config(layout="wide", page_title="WanderPal Paris")
@@ -179,7 +179,7 @@ st.header("💬 Ask WanderPal about Parisian Activities!")
 # Load API key
 load_dotenv()
 api_key = st.secrets["API_groq_cloud"]
-HF_Toke = st.secrets["HF_TOKEN"]
+HF_Token = st.secrets["HF_TOKEN"]
 
 # Load Paris Activities Data
 @st.cache_data
@@ -323,7 +323,8 @@ def prepare_rag_documents(df):
 def setup_chatbot(api_key, _documents): # Added underscore here
     # Initialize LLM and Embedding Model
     llm = Groq(model="llama3-70b-8192", api_key=api_key)
-    embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L12-v2")
+    embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L12-v2",
+                                      token=HF_Token)
 
     # Set LlamaIndex Global Settings
     Settings.llm = llm
