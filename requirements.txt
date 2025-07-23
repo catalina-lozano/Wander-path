@@ -26,6 +26,8 @@ llama-index-llms-openai
 llama-index-llms-openai-like==0.4.0
 llama-index-multi-modal-llms-openai 
 llama-index-program-openai 
+transformers==4.30.0 
+sentence-transformers==2.2.2
 llama-index-question-gen-openai 
 llama-index-readers-file 
 llama-index-readers-llama-parse 
