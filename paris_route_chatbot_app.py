@@ -177,8 +177,8 @@ if st.session_state.route:
 st.header("💬 Ask WanderPal about Parisian Activities!")
 
 # Load API key
-load_dotenv()
-api_key = st.secrets["API_groq_cloud"]
+#load_dotenv()
+api_key = st.secrets.get("API_groq_cloud")
 HF_Token = st.secrets["HF_TOKEN"]
 
 # Load Paris Activities Data
