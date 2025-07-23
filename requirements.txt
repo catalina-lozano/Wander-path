@@ -14,7 +14,7 @@ llama-cloud
 llama-cloud-services 
 llama-index-agent-openai 
 llama-index-cli 
-llama-index-core==0.12.44
+llama-index-core==0.12.51
 llama-index-embeddings-huggingface==0.5.5
 llama-index-embeddings-instructor==0.3.0
 llama-index-embeddings-openai 
