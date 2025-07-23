@@ -323,8 +323,7 @@ def prepare_rag_documents(df):
 def setup_chatbot(api_key, _documents): # Added underscore here
     # Initialize LLM and Embedding Model
     llm = Groq(model="llama3-70b-8192", api_key=api_key)
-    embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L12-v2",
-                                      token=HF_Token)
+    embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L12-v2")
 
     # Set LlamaIndex Global Settings
     Settings.llm = llm
