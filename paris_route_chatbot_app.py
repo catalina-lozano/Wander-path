@@ -179,7 +179,7 @@ st.header("💬 Ask WanderPal about Parisian Activities!")
 # Load API key
 #load_dotenv()
 api_key = st.secrets.get("API_groq_cloud")
-#HF_Token = st.secrets["HF_TOKEN"]
+HF_Token = st.secrets.get("HF_TOKEN", None)
 
 # Load Paris Activities Data
 @st.cache_data
