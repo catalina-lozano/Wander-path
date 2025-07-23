@@ -178,8 +178,8 @@ st.header("💬 Ask WanderPal about Parisian Activities!")
 
 # Load API key
 load_dotenv()
-api_key = os.getenv("API_groq_cloud")
-HF_Toke = os.getenv("HF_TOKEN") # Although not directly used for the chatbot LLM, kept for consistency
+api_key = st.secrets["API_groq_cloud"]
+HF_Toke = st.secrets["HF_TOKEN"]
 
 # Load Paris Activities Data
 @st.cache_data
