@@ -9,32 +9,7 @@ geopy==2.4.1
 matplotlib==3.10.3
 pandas==2.3.1
 python-dotenv==1.1.1
-llama_index==0.12.51
-llama-cloud 
-llama-cloud-services 
-llama-index-agent-openai 
-llama-index-cli 
-llama-index-core==0.12.51
-llama-index-embeddings-huggingface==0.5.5
-llama-index-embeddings-instructor==0.3.0
-llama-index-embeddings-openai 
-llama-index-indices-managed-llama-cloud 
-llama-index-instrumentation 
-llama-index-legacy 
-llama-index-llms-groq==0.3.2
-llama-index-llms-openai 
-llama-index-llms-openai-like==0.4.0
-llama-index-multi-modal-llms-openai 
-llama-index-program-openai 
-transformers==4.42.1
-sentence-transformers==2.7.0
-huggingface_hub==0.23.3
-llama-index-question-gen-openai 
-llama-index-readers-file 
-llama-index-readers-llama-parse 
-llama-index-workflows==1.0.1
-llama-parse 
-llamaindex-py-client 
+ 
 
 
 
